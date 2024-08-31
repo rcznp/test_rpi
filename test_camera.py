@@ -1,7 +1,7 @@
-from picamera import Picamera
+from picamera import PiCamera
 from time import sleep
 #test change
-camera = Picamera()
+camera = PiCamera()
 camera.start_preview()
 sleep(5)
 camera.capture('/mnt/public/image.jpg')
